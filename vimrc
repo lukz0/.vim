@@ -1,3 +1,4 @@
+map <F2> :source $MYVIMRC<CR>:echoe "Vimrc Reloaded!!!"<CR>
 set clipboard=unnamedplus
 syntax on
 packadd! onedark.vim

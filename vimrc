@@ -1,5 +1,6 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"filetype indent off
+"set nocompatible              " be iMproved, required
+" filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,11 +12,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+" filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -28,10 +30,17 @@ filetype plugin indent on    " required
 map <F2> :source $MYVIMRC<CR>:echoe "Vimrc Reloaded!!!"<CR>
 set clipboard=unnamedplus
 syntax on
-packadd! onedark.vim
-let g:onedark_termcolors=16
-colorscheme onedark
+" packadd! onedark.vim
+" let g:onedark_termcolors=16
+" colorscheme onedark
 hi Normal ctermbg=none
 highlight NonText ctermbg=none
-filetype plugin indent on
+" filetype plugin indent on
+" filetype indent on
+set autoindent
 set smartindent
+set number
+set relativenumber
+set expandtab
+set shiftwidth=4
+set softtabstop=4
